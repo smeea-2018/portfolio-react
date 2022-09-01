@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import { grey } from "@mui/material/colors";
 export const AboutMe = () => {
   return (
-    <div>
+    <div id="about-me">
       <Paper
         sx={{
           "& .MuiTextField-root": { m: 1, width: "40ch" },

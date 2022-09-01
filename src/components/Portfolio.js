@@ -2,7 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import Paper from "@mui/material/Paper";
 function project() {
   return (
-    <div>
+    <div id="projects">
       <Paper
         sx={{
           "& .MuiTextField-root": { m: 1, width: "20em", height: "30em" },

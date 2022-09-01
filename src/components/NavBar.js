@@ -35,20 +35,6 @@ import { useState } from "react";
 // // );
 
 const drawerWidth = 240;
-const navItems = [
-  {
-    label: "About Me",
-    href: "/aboutme",
-  },
-  {
-    label: "Projects",
-    href: "/Projects",
-  },
-  {
-    label: "Contact Me",
-    href: "/contactme",
-  },
-];
 
 function NavBar({ navItems }) {
   const [mobileOpen, setMobileOpen] = useState(false);

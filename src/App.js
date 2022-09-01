@@ -5,10 +5,16 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter } from "react-router-dom";
 import { AboutMe } from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
-
+import ContactMe from "./components/ContactMe";
+import { Resume } from "./components/Resume";
+import Footer from "./components/Footer";
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: "000814",
+      }}
+    >
       {/*<header>
          <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -30,22 +36,25 @@ function App() {
           navItems={[
             {
               label: "About Me",
-              href: "/aboutme",
+              href: "#about-me",
             },
             {
               label: "Portfolio",
-              href: "/Portfolio",
+              href: "#projects",
             },
             {
               label: "Contact Me",
-              href: "/contactme",
+              href: "#contact-me",
             },
-            { label: "Resume", href: "/resume" },
+            { label: "Resume", href: "#resume" },
           ]}
         />
       </header>
       <AboutMe />
       <Portfolio />
+      <ContactMe />
+      <Resume />
+      <Footer />
     </div>
   );
 }

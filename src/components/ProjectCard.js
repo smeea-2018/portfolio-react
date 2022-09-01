@@ -8,55 +8,41 @@ import Typography from "@mui/material/Typography";
 import { display } from "@mui/system";
 import Box, { BoxProps } from "@mui/material/Box";
 
+// import dayplannerimg from "../images/dayplannerscreenshot.JPG";
+
 const project = [
   {
     title: "Event Planning",
-    description: "sss",
-    imageUrl: "background.avif",
+    description:
+      " This app creates an event card detailing host, venue, food served and music played.",
+    imageUrl: "eventplanningcard.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
   {
-    title: "Event Planning2",
-    description: "Generates invitation card",
-    imageUrl: [
-      "https://m.media-amazon.com/images/M/MV5BMTBmNzU0NWMtN2EwMi00OTU0LTg5NWMtNjQzZTM4M2NmOWM5XkEyXkFqcGdeQXVyNDAzNjgzNw@@._V1_UX182_CR0,0,182,268_AL_.jpg",
-    ],
+    title: "Eco Bike Hire",
+    description:
+      "Eco-bike-hire enables customer to hire a bike by following simple steps: search a bike, login and book bike.",
+    imageUrl: "ecobikehire.JPG",
+
     githubLink: "https://github.com/smeea-2018",
   },
   {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdahboard.JPG",
+    title: "Password Generator",
+    description:
+      " The responsive web app generates random password based on the criteria specified.",
+    imageUrl: "passwordgenerator.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
   {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdahboard.JPG",
+    title: "Day Planner",
+    description: "The responsive app plans activites for a day.",
+    imageUrl: "dayplannerscreenshot.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
   {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdahboard.JPG",
-    githubLink: "https://github.com/smeea-2018",
-  },
-  {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdahboard.JPG",
-    githubLink: "https://github.com/smeea-2018",
-  },
-  {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdashboard.JPG",
-    githubLink: "https://github.com/smeea-2018",
-  },
-  {
-    title: "Event Planning",
-    description: "sss",
-    imageUrl: "weatherdashboard.JPG",
+    title: "Weather Dashboard",
+    description: "The app forecasts the weather.",
+    imageUrl: "weatherdashbaordlondondata.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
 ];
@@ -97,12 +83,7 @@ export default function MediaCard() {
         {project.map((x) => (
           <item>
             <Card sx={{ maxWidth: 345 }}>
-              <CardMedia
-                component="img"
-                height="140"
-                src={x.imageUrl}
-                alt="green iguana"
-              />
+              <CardMedia component="img" height="140" src={x.imageUrl} alt="" />
 
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
