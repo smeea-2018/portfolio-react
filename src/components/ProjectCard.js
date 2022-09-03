@@ -75,10 +75,10 @@ export default function MediaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 {x.description}
-              </Typography>
+              </Typography>{" "}
             </CardContent>
             <CardActions>
-              <Button size="small" href="{x.githubLink">
+              <Button size="small" href="{x.githubLink}">
                 Github
               </Button>
               <Button size="small">Deployed site</Button>
