@@ -6,7 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { display } from "@mui/system";
-import Box, { BoxProps } from "@mui/material/Box";
+import Box from "@mui/material/Box";
 
 // import dayplannerimg from "../images/dayplannerscreenshot.JPG";
 
@@ -46,26 +46,6 @@ const project = [
     githubLink: "https://github.com/smeea-2018",
   },
 ];
-function item() {
-  return (
-    <Box
-      sx={{
-        p: 1,
-        ml: 3,
-        bgcolor: (theme) =>
-          theme.palette.mode === "dark" ? "#101010" : "grey.100",
-        color: (theme) =>
-          theme.palette.mode === "dark" ? "grey.300" : "grey.800",
-        border: "10px solid",
-        borderColor: (theme) =>
-          theme.palette.mode === "dark" ? "grey.800" : "grey.300",
-        borderRadius: 2,
-        fontSize: "0.875rem",
-        fontWeight: "700",
-      }}
-    />
-  );
-}
 
 export default function MediaCard() {
   return (
@@ -77,30 +57,33 @@ export default function MediaCard() {
           flexWrap: "wrap",
           justifyContent: "space-between",
           p: 3,
-          m: 5,
+          m: 7,
         }}
       >
         {project.map((x) => (
-          <item>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardMedia component="img" height="140" src={x.imageUrl} alt="" />
+          <Card sx={{ maxWidth: 345 }}>
+            <CardMedia
+              component="img"
+              height="140"
+              src={`${process.env.PUBLIC_URL}/images/${x.imageUrl}`}
+              alt=""
+            />
 
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {x.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {x.description}
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small" href="{x.githubLink">
-                  Github
-                </Button>
-                <Button size="small">{x.title}</Button>
-              </CardActions>
-            </Card>
-          </item>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {x.title}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {x.description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <Button size="small" href="{x.githubLink">
+                Github
+              </Button>
+              <Button size="small">Deployed site</Button>
+            </CardActions>
+          </Card>
         ))}
       </Box>
     </div>

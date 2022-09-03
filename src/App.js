@@ -8,6 +8,8 @@ import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
 import { Resume } from "./components/Resume";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
+
 function App() {
   return (
     <div
@@ -15,22 +17,6 @@ function App() {
         backgroundColor: "000814",
       }}
     >
-      {/*<header>
-         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <NavBar />
-      </header>*/}
-
       <header>
         <NavBar
           navItems={[
@@ -50,6 +36,7 @@ function App() {
           ]}
         />
       </header>
+      <Home />
       <AboutMe />
       <Portfolio />
       <ContactMe />
