@@ -42,7 +42,7 @@ const project = [
   {
     title: "Weather Dashboard",
     description: "The app forecasts the weather.",
-    imageUrl: "weatherdashbaordlondondata.JPG",
+    imageUrl: "weatherdashboard.JPG",
     githubLink: "https://github.com/smeea-2018",
   },
 ];
@@ -56,12 +56,11 @@ export default function MediaCard() {
           flexDirection: "row",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          p: 3,
-          m: 7,
+          m: "2",
         }}
       >
         {project.map((x) => (
-          <Card sx={{ maxWidth: 345 }}>
+          <Card sx={{ maxWidth: 300 }}>
             <CardMedia
               component="img"
               height="140"

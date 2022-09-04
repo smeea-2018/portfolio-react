@@ -23,21 +23,26 @@ export default function Message({}) {
   };
 
   return (
-    <div id="contact-me">
+    <div
+      id="contact-me"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        alignItems: "center",
+      }}
+    >
       <Paper
         sx={{
           "& .MuiTextField-root": { m: 1, width: "40ch" },
-          display: "flex",
-          flexDirection: "column",
-          flexWrap: "wrap",
-          justifyContent: "space-around",
-          alignItems: "center",
+
           p: 3,
           m: 8,
         }}
       >
         <Typography component="h1" variant="h4" align="center">
-          Login
+          Contact Me
         </Typography>
         <Divider />
         <Stack
