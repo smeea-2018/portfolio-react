@@ -10,7 +10,7 @@ export default function Home() {
       <Carousel.Item style={{}}>
         <img
           className="d-block w-100"
-          src={`${process.env.PUBLIC_URL}/images/bg.JPG`}
+          src={`${process.env.PUBLIC_URL}/images/bg.jpg`}
           alt="First slide"
           style={{ height: 600, opacity: 0.7 }}
         />

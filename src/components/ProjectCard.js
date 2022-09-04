@@ -46,7 +46,7 @@ const project = [
   {
     title: "Weather Dashboard",
     description: "The app forecasts the weather.",
-    imageUrl: "weatherdashboard.JPG",
+    imageUrl: "weatherdashboard.jpg",
     githubLink: "https://github.com/smeea-2018",
     deployedLink: "https://smeea-2018.github.io/weather-dashboard/",
   },
