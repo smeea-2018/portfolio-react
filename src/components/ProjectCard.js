@@ -16,7 +16,8 @@ const project = [
     description:
       " This app creates an event card detailing host, venue, food served and music played.",
     imageUrl: "eventplanningcard.JPG",
-    githubLink: "https://github.com/smeea-2018",
+    githubLink: "https://github.com/smeea-2018/event-planning",
+    deployedLink: "https://am0031.github.io/event-planning/",
   },
   {
     title: "Eco Bike Hire",
@@ -24,26 +25,30 @@ const project = [
       "Eco-bike-hire enables customer to hire a bike by following simple steps: search a bike, login and book bike.",
     imageUrl: "ecobikehire.JPG",
 
-    githubLink: "https://github.com/smeea-2018",
+    githubLink: "https://github.com/smeea-2018/eco-bike-hire",
+    deployedLink: "https://blooming-meadow-71288.herokuapp.com/",
   },
   {
     title: "Password Generator",
     description:
       " The responsive web app generates random password based on the criteria specified.",
     imageUrl: "passwordgenerator.JPG",
-    githubLink: "https://github.com/smeea-2018",
+    githubLink: "https://github.com/smeea-2018/password-generator/tree/dev",
+    deployedLink: "https://smeea-2018.github.io/password-generator/",
   },
   {
     title: "Day Planner",
     description: "The responsive app plans activites for a day.",
     imageUrl: "dayplannerscreenshot.JPG",
-    githubLink: "https://github.com/smeea-2018",
+    githubLink: "https://github.com/smeea-2018/dayplanner/tree/dev",
+    deployedLink: "https://smeea-2018.github.io/dayplanner/",
   },
   {
     title: "Weather Dashboard",
     description: "The app forecasts the weather.",
     imageUrl: "weatherdashboard.JPG",
     githubLink: "https://github.com/smeea-2018",
+    deployedLink: "https://smeea-2018.github.io/weather-dashboard/",
   },
 ];
 
@@ -77,10 +82,12 @@ export default function MediaCard() {
               </Typography>{" "}
             </CardContent>
             <CardActions>
-              <Button size="small" href="{x.githubLink}">
+              <Button size="small" href={x.githubLink}>
                 Github
               </Button>
-              <Button size="small">Deployed site</Button>
+              <Button size="small" href={x.deployedLink}>
+                Deployed site
+              </Button>
             </CardActions>
           </Card>
         ))}
