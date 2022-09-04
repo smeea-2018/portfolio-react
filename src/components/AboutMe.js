@@ -1,7 +1,6 @@
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
-import Box from "@mui/material/Box";
 import { grey } from "@mui/material/colors";
 export const AboutMe = () => {
   return (
