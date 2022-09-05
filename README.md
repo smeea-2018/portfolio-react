@@ -1,6 +1,6 @@
 # React: React Portfolio
 
-## Link to deploy website [here]()
+## Link to deploy website [here](https://smeea-2018.github.io/portfolio-react/)
 
 ## Task
 
@@ -50,7 +50,7 @@ React
 
 ## Mock-Up
 
-![text editor](./)
+![text editor](./public/images/mockupreact.JPG)
 
 ## Installation:
 
