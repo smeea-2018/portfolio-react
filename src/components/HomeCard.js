@@ -27,7 +27,7 @@ export default function FullScreenDialog() {
 
   return (
     <div>
-      <div style={{ color: "white" }}>
+      <div style={{ color: "black" }}>
         Hi, I am Smeea, I am a full stack developer
       </div>
       <Button variant="contained" onClick={handleClickOpen}>

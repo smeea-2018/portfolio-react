@@ -12,7 +12,7 @@ export default function Home() {
           className="d-block w-100"
           src={`${process.env.PUBLIC_URL}/images/bg.jpg`}
           alt="First slide"
-          style={{ height: 600, opacity: 0.7 }}
+          style={{ height: 600, opacity: 0.4 }}
         />
         <div
           style={{
@@ -22,12 +22,21 @@ export default function Home() {
             left: "40%",
           }}
         >
-          <Carousel.Caption style={{ opacity: "1", fontWeight: "bold" }}>
+          <Carousel.Caption
+            style={{ opacity: "1", fontWeight: "bold", color: "black" }}
+          >
             <h3>Hi, I am Smeea</h3>
             <p>Full Stack Developer</p>
-            <Button variant="primary" size="medium" href="#projects">
-              Portfolio
-            </Button>
+            <div sx={{ m: 4 }}>
+              <Button
+                style={{ m: 3 }}
+                variant="primary"
+                size="medium"
+                href="#projects"
+              >
+                Portfolio
+              </Button>
+            </div>
           </Carousel.Caption>
         </div>
       </Carousel.Item>

@@ -7,6 +7,7 @@ import Divider from "@mui/material/Divider";
 import { useMediaQuery } from "@mui/material";
 
 import { Button } from "@mui/material";
+import { blue, red } from "@mui/material/colors";
 
 export default function Message({}) {
   const isMobile = useMediaQuery("(max-width:900px)");
@@ -25,18 +26,25 @@ export default function Message({}) {
   return (
     <div
       id="contact-me"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-        alignItems: "center",
-      }}
+      style={
+        {
+          // display: "flex",
+          // flexDirection: "column",
+          // flexWrap: "wrap",
+          // justifyContent: "space-around",
+          // alignItems: "center",
+        }
+      }
     >
       <Paper
         sx={{
           "& .MuiTextField-root": { m: 1, width: "40ch" },
 
+          display: "flex",
+          flexDirection: "column",
+          flexWrap: "wrap",
+          justifyContent: "space-around",
+          alignItems: "center",
           p: 3,
           m: 8,
         }}
